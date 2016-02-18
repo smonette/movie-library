@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/smonette/movie-library/issues"
   },
-  "homepage": "https://github.com/smonette/movie-library"
+  "homepage": "https://github.com/smonette/movie-library",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-sass": "^1.1.0",
+    "nodemon": "^1.8.1"
+  }
 }
