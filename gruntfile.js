@@ -28,6 +28,8 @@ module.exports = function(grunt) {
     },
   });
 
+  grunt.registerTask("compile", ['sass']);
+
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 };
