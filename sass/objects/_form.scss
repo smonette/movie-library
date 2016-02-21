@@ -1,0 +1,22 @@
+.form-row {
+  margin-bottom: 10px;
+}
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.form-input {
+  padding: 10px;
+  border-radius: $rounded;
+  border: $border;
+
+  &:focus { border-color: $teal; }
+}
+.form-submit {
+  padding: 10px 15px;
+  border-radius: $rounded;
+  background: $teal;
+  text-transform: uppercase;
+  &:hover { background-color: darken($teal, 20%); }
+}

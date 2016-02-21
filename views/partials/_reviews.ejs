@@ -1,0 +1,32 @@
+<ul class="reviews">
+
+  <% for(i=0; i < movies.length; i++) { %>
+    <li class="review">
+      <h2 class="review-title">  	
+	      <%= movies[i].title %>
+      </h2>
+      <div class="review-detail">
+        <p class="review-text">
+          <%= movies[i].review %>
+        </p>
+
+        <% if (movies[i].image){ %>
+          <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
+        <% } %>
+
+        <h3>My Rating:</h3>
+        <% if (movies[i].rating == 0){ %>
+          <p>BOO</p>
+        <% } else if (movies[i].rating == 1){ %>
+          <p>Ok</p>
+        <% } else if (movies[i].rating == 2){ %>
+          <p>YEAHHHHH</p>
+        <% } else { %>
+          <p>???</p>
+        <% } %>
+      </div>
+
+
+    </li>
+  <% } %>
+</ul>

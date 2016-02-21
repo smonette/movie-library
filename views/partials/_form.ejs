@@ -1,0 +1,23 @@
+<p><%= message %></p>
+
+<form action="/create" method ="post">
+  <div class="form-row">
+    <span class="form-label">Movie Title</span>
+    <input class="form-input" type="text" placeholder="Movie Title" name="title" required>
+  </div>
+  <div class="form-row">
+    <span class="form-label">My Review</span>
+    <input class="form-input" type="textarea" placeholder="My Review" name="review" required> 
+  </div>
+  <div class="form-row">
+    <span class="form-label">Poster URL</span>
+    <input class="form-input" type="url" placeholder="Image URL" name="image"> 
+  </div>
+  <div class="form-row">
+    <span class="form-label">My Rating</span>
+    <input class="form-input" type="range"  min="0" max="2" name="rating"/>
+  </div>
+  <div class="form-row">
+    <input class="form-submit" type="submit">
+  </div>
+</form>

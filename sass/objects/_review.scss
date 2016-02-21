@@ -1,0 +1,19 @@
+.reviews {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.review {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  max-width: 30%;
+
+  border: $border;
+  border-radius: $rounded;
+
+  padding: 20px;
+}

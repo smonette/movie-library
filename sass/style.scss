@@ -1,6 +1,15 @@
-@import "utilities/variables";
-@import "utilities/reset";
-@import "objects/defaults";
+// Default Styles
+@import "defaults/variables";
+@import "defaults/reset";
+@import "defaults/defaults";
+@import "defaults/typography";
 
-@import "objects/form";
+// Page Structure
 @import "objects/header";
+
+// Add Review form
+@import "objects/form";
+
+// Existing Reviews
+@import "objects/review";
+@import "objects/review.image";
