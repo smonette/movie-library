@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "movie_library",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "movie_library",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "movie_library",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
