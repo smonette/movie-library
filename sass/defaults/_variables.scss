@@ -10,3 +10,9 @@ $border: 1px solid $navy;
 
 // lifted from the Alamo Drafthouse
 $dot-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVQYV2OUkZH5z0AEYMSl8MmTJ2DtMjIyYBqrQpgimEUgxZQpBJlElNXY/Aa2Gl03VoUMDAwowQPzJbpiRqIVEms1APUkH0np32M2AAAAAElFTkSuQmCC);
+
+// BREAKPOINTS
+$mobile-only:		'max-width: 600px';
+$tablet-up:			'min-width:767px';
+$up-to-desktop:		'max-width:960px';
+$desktop-up:		'min-width: 961px';

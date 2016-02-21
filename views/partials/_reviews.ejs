@@ -2,17 +2,20 @@
 
   <% for(i=0; i < movies.length; i++) { %>
     <li class="review">
-      <h2 class="review-title">  	
-	      <%= movies[i].title %>
-      </h2>
-      <div class="review-detail">
-        <p class="review-text">
+      <% if (movies[i].image){ %>
+        <div class="review-thumbnail">        
+          <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
+        </div>
+      <% } %>
+      
+      <div class="review-detail" >
+        <h2 class="review-title">   
+          <a href="#" class="review-target" data-movie="<%= i %>"><%= movies[i].title %></a>
+        </h2>
+
+        <p class="review-text" data-movie="<%= i %>">
           <%= movies[i].review %>
         </p>
-
-        <% if (movies[i].image){ %>
-          <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
-        <% } %>
 
         <h3>My Rating:</h3>
         <% if (movies[i].rating == 0){ %>
@@ -24,6 +27,7 @@
         <% } else { %>
           <p>???</p>
         <% } %>
+
       </div>
 
 

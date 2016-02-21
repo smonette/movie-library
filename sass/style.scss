@@ -3,6 +3,7 @@
 @import "defaults/reset";
 @import "defaults/defaults";
 @import "defaults/typography";
+@import "layouts/row";
 
 // Page Structure
 @import "objects/header";
@@ -12,4 +13,3 @@
 
 // Existing Reviews
 @import "objects/review";
-@import "objects/review.image";
