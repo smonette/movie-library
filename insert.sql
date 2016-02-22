@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS movies;
 
-CREATE TABLE movies( id SERIAL PRIMARY KEY, title VARCHAR, review TEXT, image TEXT, rating INTEGER );
+CREATE TABLE movies( id SERIAL PRIMARY KEY, title VARCHAR, review TEXT, image TEXT, rating INTEGER, createdat DATE, updatedat DATE );
 
 INSERT INTO movies (title, review, image, rating)
 VALUES
