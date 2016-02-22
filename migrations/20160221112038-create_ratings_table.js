@@ -19,9 +19,7 @@ module.exports = {
         title: Sequelize.STRING,
         review: Sequelize.TEXT,
         image: Sequelize.TEXT,
-        rating: Sequelize.INTEGER,
-        createdAt: Sequelize.DATE,
-        updatedAt: Sequelize.DATE
+        rating: Sequelize.INTEGER
 
       })
 
