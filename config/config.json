@@ -14,7 +14,7 @@
     "username": "wpghcddrzfentp",
     "password": "yXt9AJ57jslXz-r3x1NPO_8Wvh",
     "host": "ec2-54-227-245-197.compute-1.amazonaws.com",
-    "port":"80",
+    "port":"5432",
     "database": "d748gaobn3o2ln"
   }
 }
