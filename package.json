@@ -31,7 +31,7 @@
     "sequelize-cli": "^2.3.1"
   },
   "scripts": {
-    "postinstall": "grunt grunt-sass",
+    "postinstall": "grunt compile",
     "start": "node server.js"
   }
 }
