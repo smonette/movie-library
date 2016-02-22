@@ -4,6 +4,8 @@ $white: #FDFFFC;
 $gold: #FF9F1C;
 $teal: #41EAD4;
 
+$space: 20px;
+
 $rounded: 5px;
 
 $border: 1px solid $navy;
@@ -13,6 +15,6 @@ $dot-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAA
 
 // BREAKPOINTS
 $mobile-only:		'max-width: 600px';
-$tablet-up:			'min-width:767px';
+$tablet-up:			'min-width:601px';
 $up-to-desktop:		'max-width:960px';
 $desktop-up:		'min-width: 961px';

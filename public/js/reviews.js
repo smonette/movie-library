@@ -1,10 +1,16 @@
-console.log('loaded');
+$(document).ready(function() {
+  
+  console.log('loaded');
 
-var targets = $('.review-target');
+  $('.review-target').on("click", function(e){
+    e.preventDefault();
+    var movie = $(this).attr('data-movie');
 
-$(targets).on("click", "a", function(e){
-  e.preventDefault();
-  alert('clicked!');
+    var review = $('.review-detail').find("[data-text='" + movie + "']");
+
+    $(review).toggleClass('show');
+
+  });
+  
 });
 
-console.log(targets)
