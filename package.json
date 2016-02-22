@@ -29,5 +29,9 @@
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.3",
     "sequelize-cli": "^2.3.1"
+  },
+  "scripts": {
+    "postinstall": "grunt grunt-sass",
+    "start": "node server.js"
   }
 }
