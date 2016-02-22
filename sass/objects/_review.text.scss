@@ -1,16 +1,13 @@
 .review-text {
-  margin-top: $space;
-  margin-bottom: $space;
-
   font-size: 20px;
-  line-height: 30px;
+  line-height: 30px; 
+  
   &:before {
     content: '\201C';
   }
   &:after {
     content: '\201D';
   }
-
 
   // hide & show
   display: none;

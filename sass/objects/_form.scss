@@ -3,8 +3,12 @@
 }
 .form-label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-size: 20px;
+}
+.form-label_radio {
+  margin-left: 10px;
 }
 .form-input {
   padding: 10px;
@@ -19,8 +23,11 @@
   background: $dark;
   color: $white;
   text-transform: uppercase;
+  font-size: 20px;
+
   &:hover { 
     background-color: $teal; 
     color: $dark;
+    cursor: pointer;
   }
 }

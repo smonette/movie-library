@@ -1,15 +1,24 @@
 <% include partials/_head.ejs %>
 <body>
 
-  <header>
-    this is the header
+  <header class="mar-bottom">
+    <h1 class="header-title">My Movie Reviews</h1>
+    <form action="">
+      <input type="search" name="filter-movies">
+    </form>
   </header>
   
   <div class="row">
     <% include partials/_reviews.ejs %>
   </div>
 
-
+  <footer class="mar-y type-centered">
+    <div class="row">
+      Built by Steph Monette in 2016
+      <span class="footer-divider"> 💖 </span>
+      Check the source code on <a href="https://github.com/smonette/movie-library">GitHub</a>.
+    </div>
+  </footer>
 <% include partials/_overlay.ejs %>
 </body>
 </html>

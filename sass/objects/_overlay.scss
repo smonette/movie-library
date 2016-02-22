@@ -18,11 +18,12 @@
   padding: $space;
   border-radius: $border-radius;
   
-  margin-top: 15%;
+  margin-top:10px;
   margin-right: auto;
   margin-left: auto;
 
   @media ($tablet-up) {
+    margin-top: 50px;
     width: 50%;
   }
 
@@ -33,5 +34,5 @@
   right: 10px;
   top: 0;
   
-  font-size: 30px;
+  font-size: 35px;
 }

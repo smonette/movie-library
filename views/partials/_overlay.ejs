@@ -2,27 +2,33 @@
   <div class="row"> 
     <div class="overlay-container">
       <a href="#" class="overlay-dismiss" id="overlay-dismiss">&times;</a>
+
+      <h2 class="type-centered mar-y">Add a review</h2>
+
       <form action="/create" method ="post" class="movie-form">
         <div class="form-row">
           <span class="form-label">Movie Title</span>
           <input class="form-input" type="text" placeholder="Movie Title" name="title" required>
         </div>
+        
         <div class="form-row">
           <span class="form-label">My Review</span>
           <textarea class="form-input" placeholder="My Review" name="review" rows="5" required></textarea>
         </div>
+
         <div class="form-row">
           <span class="form-label">Poster URL</span>
           <input class="form-input" type="url" placeholder="Image URL" name="image"> 
         </div>
+
         <div class="form-row">
           <span class="form-label">My Rating</span>
-          <input type="radio" name="rating" value="0" checked>⭐<br>
-          <input type="radio" name="rating" value="1">⭐⭐<br>
-          <input type="radio" name="rating" value="2">⭐⭐⭐<br> 
-          <input type="radio" name="rating" value="3">⭐⭐⭐⭐<br>
-          <input type="radio" name="rating" value="4">⭐⭐⭐⭐⭐<br>
+          <input type="radio" name="rating" value="0" checked><span class="form-label_radio">⭐</span><br>
+          <input type="radio" name="rating" value="1"><span class="form-label_radio">⭐⭐</span><br>
+          <input type="radio" name="rating" value="2"><span class="form-label_radio">⭐⭐⭐</span><br> 
+          <input type="radio" name="rating" value="3"><span class="form-label_radio">⭐⭐⭐⭐</span><br>
         </div>
+
         <div class="form-row">
           <input class="form-submit" type="submit">
         </div>

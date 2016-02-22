@@ -1,12 +1,12 @@
 <ul class="review-grid">
-  <li class="add-review-tile">
+  <li class="add-review-tile mar-bottom">
     <a href="#" class="add-review" id="overlay-init">
       <span class="add-review_icon">+</span><br>
       <span class="add-review_cta">Add a review</span>
     </a>
   </li>
   <% for(i=0; i < movies.length; i++) { %>
-    <li class="review-tile">
+    <li class="review-tile mar-bottom">
       <% if (movies[i].image){ %>
         <div class="review-thumbnail">        
           <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
@@ -20,19 +20,19 @@
           </a>
         </h2>
 
-        <p class="review-text" data-text="movie_<%= i %>">
+        <p class="review-text mar-y" data-text="movie_<%= i %>">
           <%= movies[i].review %>
         </p>
 
         <p>My Rating:</h3>
         <% if (movies[i].rating == 0){ %>
-          BOO</p>
+          ⭐</p>
         <% } else if (movies[i].rating == 1){ %>
-          Ok</p>
+          ⭐⭐</p>
         <% } else if (movies[i].rating == 2){ %>
-          YEAHHHHH</p>
+          ⭐⭐⭐</p>
         <% } else { %>
-          ???</p>
+          ⭐⭐⭐⭐</p>
         <% } %>
     </li>
   <% } %>

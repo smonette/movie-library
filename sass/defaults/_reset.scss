@@ -26,7 +26,7 @@ $display-block: "article,aside,details,figcaption,figure,footer,header,hgroup,ma
 }
 
 // List of block elements
-$border-box: "address, article, aside, audio, blockquote, canvas, dd, div, dl, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, noscript, ol, output, p, pre, section, table, tfoot, ul, video, li";
+$border-box: "address, article, aside, audio, blockquote, canvas, dd, div, dl, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, noscript, ol, output, p, pre, section, table, textarea, tfoot, ul, video, li";
 
 // Set up sane box-sizing
 #{$border-box} {
