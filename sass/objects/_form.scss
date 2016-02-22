@@ -1,5 +1,5 @@
 .form-row {
-  margin-bottom: 10px;
+  margin-bottom: $space;
 }
 .form-label {
   display: block;
@@ -8,15 +8,19 @@
 }
 .form-input {
   padding: 10px;
-  border-radius: $rounded;
+  border-radius: $border-radius;
   border: $border;
-
-  &:focus { border-color: $teal; }
+  width: 100%;
+  resize: none;
 }
 .form-submit {
   padding: 10px 15px;
-  border-radius: $rounded;
-  background: $teal;
+  border-radius: $border-radius;
+  background: $dark;
+  color: $white;
   text-transform: uppercase;
-  &:hover { background-color: darken($teal, 20%); }
+  &:hover { 
+    background-color: $teal; 
+    color: $dark;
+  }
 }

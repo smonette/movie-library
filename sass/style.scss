@@ -8,10 +8,15 @@
 // Page Structure
 @import "objects/header";
 
-// Add Review form
+
+// ADD REVIEWS
+// Overlay
+@import "objects/overlay";
+
+// Form
 @import "objects/form";
 
-// Existing Reviews
+// REVIEW GRID
 @import "objects/review";
 @import "objects/review.image";
 @import "objects/review.text";

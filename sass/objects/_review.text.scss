@@ -1,5 +1,27 @@
-// hide & show
 .review-text {
+  margin-top: $space;
+  margin-bottom: $space;
+
+  font-size: 20px;
+  line-height: 30px;
+  &:before {
+    content: '\201C';
+  }
+  &:after {
+    content: '\201D';
+  }
+
+
+  // hide & show
   display: none;
-  &.show { display: block; }
+
+  &.show { 
+    display: block; 
+  }
+}
+
+.review-title {
+  margin-bottom: $space;
+
+  a:hover { color: $teal; }
 }

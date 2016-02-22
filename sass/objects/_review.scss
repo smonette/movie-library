@@ -1,4 +1,4 @@
-.reviews {
+.review-grid {
   display: flex;
   flex-flow: column;
 
@@ -8,15 +8,10 @@
   }
 }
 
-.review {
-  border: $border;
-  border-radius: $rounded;
-  background: #ffffff;
-
+.review-tile,
+.add-review-tile {
   padding: $space;
-  
   text-align: center;
-
   margin-bottom: $space;
 
   @media ($tablet-up) {
@@ -30,4 +25,25 @@
       margin-left: $space;
     }
   }
+}
+
+.review-tile {
+  border: $border;
+  border-radius: $border-radius;
+  background: #ffffff;
+}
+
+
+// Add review
+.add-review {
+  text-align:center;
+  &:hover { color: $teal; }
+}
+.add-review_icon {
+  font-size: 100px;
+  font-weight: bold;
+}
+.add-review_cta {
+  font-size: 50px;
+  text-transform: uppercase;
 }

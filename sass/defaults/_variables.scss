@@ -1,17 +1,14 @@
-$navy: #011627;
-$magenta: #F71735;
+$dark: #011627;
 $white: #FDFFFC;
+$magenta: #F71735;
 $gold: #FF9F1C;
 $teal: #41EAD4;
 
 $space: 20px;
 
-$rounded: 5px;
+$border-radius: 5px;
 
-$border: 1px solid $navy;
-
-// lifted from the Alamo Drafthouse
-$dot-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVQYV2OUkZH5z0AEYMSl8MmTJ2DtMjIyYBqrQpgimEUgxZQpBJlElNXY/Aa2Gl03VoUMDAwowQPzJbpiRqIVEms1APUkH0np32M2AAAAAElFTkSuQmCC);
+$border: 1px solid $dark;
 
 // BREAKPOINTS
 $mobile-only:		'max-width: 600px';
