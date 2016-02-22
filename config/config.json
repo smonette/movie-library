@@ -10,8 +10,11 @@
     "dialect": "postgres"
   },
   "production": {
-    "database": "movie_library",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "username": "wpghcddrzfentp",
+    "password": "yXt9AJ57jslXz-r3x1NPO_8Wvh",
+    "database": "d748gaobn3o2ln",
+    "host": "ec2-54-227-245-197.compute-1.amazonaws.com",
+    "port":"5432"
   }
 }
