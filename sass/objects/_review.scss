@@ -11,7 +11,6 @@
 .review-tile,
 .add-review-tile {
   padding: $space;
-  text-align: center;
 
   @media ($tablet-up) {
     flex-basis: 50%;
@@ -29,6 +28,7 @@
 .review-tile {
   border-radius: $border-radius;
   background: #ffffff;
+  text-align: center;
 }
 
 .review-rating {

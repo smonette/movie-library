@@ -1,18 +1,11 @@
 <ul class="review-grid">
   <li class="add-review-tile mar-bottom">
-    <div class="search">      
-      <form action="">
-        <div class="form-row"> 
-          <input type="search" name="filter-movies" placeholder="Search" class="form-input mar-bottom">
-          <input type="submit" placeholder="" class="form-submit">
-        </div>
-      </form>
+    <div class="add-review">
+      <a href="#" id="overlay-init">
+        <span class="add-review_icon">+</span><br>
+        <span class="add-review_cta">Add a review</span>
+      </a>
     </div>
-
-    <a href="#" class="add-review" id="overlay-init">
-      <span class="add-review_icon">+</span><br>
-      <span class="add-review_cta">Add a review</span>
-    </a>
   </li>
   <% for(i=0; i < movies.length; i++) { %>
     <li class="review-tile mar-bottom">
