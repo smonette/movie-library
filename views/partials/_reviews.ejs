@@ -1,5 +1,12 @@
 <ul class="review-grid">
   <li class="add-review-tile mar-bottom">
+    <div class="search">      
+      <form action="">
+        <input type="search" name="filter-movies" placeholder="Search">
+        <input type="submit" placeholder="">
+      </form>
+    </div>
+
     <a href="#" class="add-review" id="overlay-init">
       <span class="add-review_icon">+</span><br>
       <span class="add-review_cta">Add a review</span>
@@ -7,33 +14,40 @@
   </li>
   <% for(i=0; i < movies.length; i++) { %>
     <li class="review-tile mar-bottom">
-      <% if (movies[i].image){ %>
-        <div class="review-thumbnail">        
-          <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
-        </div>
-      <% } %>
       
         <h2 class="review-title">   
           <a href="#" class="review-target" data-movie="movie_<%= i %>">
             <%= movies[i].title %> <br>
-            <span>&#65516;</span>
+            <span>&blacktriangledown;</span>
           </a>
         </h2>
 
         <p class="review-text mar-y" data-text="movie_<%= i %>">
           <%= movies[i].review %>
         </p>
+        
+        <div class="review-thumbnail mar-y">        
+          <% if (movies[i].image){ %>
+              <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
+          <% } %>
+        </div>
 
-        <p>My Rating:</h3>
-        <% if (movies[i].rating == 0){ %>
-          ⭐</p>
-        <% } else if (movies[i].rating == 1){ %>
-          ⭐⭐</p>
-        <% } else if (movies[i].rating == 2){ %>
-          ⭐⭐⭐</p>
-        <% } else { %>
-          ⭐⭐⭐⭐</p>
-        <% } %>
+        <div class="review-rating">     
+          <p>My Rating:</h3>
+          <% if (movies[i].rating == 0){ %>
+            ⭐</p>
+          <% } else if (movies[i].rating == 1){ %>
+            ⭐⭐</p>
+          <% } else if (movies[i].rating == 2){ %>
+            ⭐⭐⭐</p>
+          <% } else { %>
+            ⭐⭐⭐⭐</p>
+          <% } %>
+        </div>
+
+
+        
+
     </li>
   <% } %>
 </ul>

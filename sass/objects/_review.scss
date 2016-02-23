@@ -27,22 +27,20 @@
 }
 
 .review-tile {
-  border: $border;
   border-radius: $border-radius;
   background: #ffffff;
 }
 
-
 // Add review
 .add-review {
   text-align:center;
-  &:hover { color: $teal; }
+  &:hover { color: $blue; }
 }
 .add-review_icon {
   font-size: 100px;
   font-weight: bold;
 }
 .add-review_cta {
-  font-size: 50px;
+  font-size: 35px;
   text-transform: uppercase;
 }
