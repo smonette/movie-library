@@ -36,20 +36,7 @@ module.exports = function (sequelize, DataTypes){
         }).then(function(movie) {
           success({ message: 'Movie added!'});
         });
-      }, // close createNewMovie
-
-      findMovie:function(term,err,success) {
-        Movie.findAll({
-          where: {
-            title: { like: '%' + term + '%' }
-          }
-        }).error(function(error) {
-          console.log(error);
-        }).then(function(movie) {
-          success({ message: 'Movie found!'});
-        });
-
-      } // close createNewMovie
+      }// close createNewMovie
 
     } // close classMethods
 

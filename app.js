@@ -37,7 +37,7 @@ app.post('/create', function(req,res){
   // have to call my create new user functions
   db.movie.createNewMovie(req.body.title, req.body.review,req.body.image, req.body.rating,
     function(err){
-      console.log('NOO')
+      console.log('NOO');
     },
     function(success){
       res.redirect('/');
@@ -47,24 +47,22 @@ app.post('/create', function(req,res){
 });
 
 app.get('/search', function (req, res) {
-  
-  var search = req.query.searchterm;
-  console.log("searched for: " + search);
-
-  db.movie.findMovie(search,
-
-    function(err){
-      req.flash('info', 'Whoops, Something went wrong');
+  db.movie.findAll({
+    where: {
+      title: { like: '%' + req.query.searchterm + '%' }
+    }
+  }).then(function(movie){
+    if(!movie[0]){
+      req.flash('info', "Sorry, there's no review for " + req.query.searchterm + ", yet.");
       res.redirect('/');
-    },
-    function(success){
-      req.flash('info', movie);
+    } else {
+      req.flash('info', movie[0].dataValues.title + " is here!");
       res.redirect('/');
     }
-  );
+
+  });
 
 });
-
 
 app.get('/*', function (req, res) {
   res.render('404');
