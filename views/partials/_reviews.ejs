@@ -22,7 +22,9 @@
           
           <div class="review-thumbnail mar-y">        
             <% if (movies[i].image){ %>
-                <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
+              <img src="<%= movies[i].image %>" alt="<%= movies[i].title %>" class="review-image">
+            <% } else { %>
+              <img src="http://placehold.it/200x300?text=no+image" alt="No poster found" class="review-image">
             <% } %>
           </div>
 

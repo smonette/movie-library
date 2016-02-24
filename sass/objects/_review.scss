@@ -14,11 +14,14 @@
   border: $border;
 
   @media ($tablet-up) {
-    flex-basis: 50%;
+    // TODO: use flex to make this less weird
+    flex-basis: 47%;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   @media ($desktop-up) {
-    flex-basis:32%;
+    flex-basis:31%;
     &:nth-of-type(3n+2) {
       margin-right: $space;
       margin-left: $space;
