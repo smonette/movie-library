@@ -1,6 +1,10 @@
-.search-bar {
+.search-container {
+  background: darken($light, 5%);
   padding-top:40px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.search-form {
   margin-right: auto;
   margin-left: auto;
   @media ($tablet-up) {

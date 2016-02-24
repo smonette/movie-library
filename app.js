@@ -56,7 +56,7 @@ app.get('/search', function (req, res) {
       req.flash('info', "Sorry, there's no review for " + req.query.searchterm + ", yet.");
       res.redirect('/');
     } else {
-      req.flash('info', movie[0].dataValues.title + " is here!");
+      req.flash('info', "I have a review for "+ movie[0].dataValues.title + "! Check below to read it.");
       res.redirect('/');
     }
 

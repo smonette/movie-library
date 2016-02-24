@@ -1,10 +1,12 @@
-<div class="search-bar">      
-  <form action="/search"  method="get">
-    <div class="form-row"> 
-      <span class="form-label">Find a Movie</span>
-      <input type="search" name="searchterm" id="searchterm" placeholder="Search" class="form-input mar-bottom">
-      <input type="submit" placeholder="Search" class="form-submit">
-    </div>
-  </form>
-    <p><%- messages() %></p>
+<div class="search-container">   
+  <div class="row">  
+    <form action="/search"  method="get" class="search-form">
+      <div class="form-row"> 
+        <span class="form-label">Find a Movie</span>
+        <input type="text" name="searchterm" placeholder="Search" class="form-input mar-bottom search-input" required>
+        <input type="submit" value="Search" class="form-submit search-submit">
+      </div>
+      <div class="search-message"><%- messages() %></div>
+    </form>
+  </div>   
 </div>

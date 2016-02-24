@@ -36,10 +36,19 @@
 }
 
 // Add review
-.add-review {
-  text-align:center;
-  &:hover { color: $blue; }
+.add-review-tile {
+  background: darken($light, 5%);
+  border-radius: $border-radius;
+
+  > a { 
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    &:hover { color: $blue; }
+  }
 }
+
 .add-review_icon {
   font-size: 100px;
   font-weight: bold;

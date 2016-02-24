@@ -1,24 +1,12 @@
 <% include partials/_head.ejs %>
 <body>
-
-  <header class="mar-bottom">
-    <h1 class="header-title"><a href="/">🎥 My Movie Reviews 🎥</a></h1>
-  </header>
-  
-  <div class="row">
-  <h1 class="type-centered mar-y">404</h1>
-  <p class="type-centered mar-bottom"> 
-    Oh no, this page doesn't exist. Why don't you check out my <a href="/">movie reviews</a> instead?
-  </p>
-  </div>
-
-  <footer class="mar-y type-centered">
+  <% include partials/_header.ejs %>
+  <main>
     <div class="row">
-      Built by Steph Monette in 2016
-      <span class="footer-divider"> 💖 </span>
-      Check the source code on <a href="https://github.com/smonette/movie-library">GitHub</a>.
+      <h2 class="type-centered mar-y">404</h2>
+        <p class="type-centered mar-bottom"> 
+          Oh no, this page doesn't exist. Why don't you check out my <a href="/">movie reviews</a> instead?
+        </p>
     </div>
-  </footer>
-<% include partials/_overlay.ejs %>
-</body>
-</html>
+  </main>  
+<% include partials/_foot.ejs %>
