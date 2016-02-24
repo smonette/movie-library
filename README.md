@@ -31,8 +31,8 @@ Good news: Most Node setup is left in the hands of `package.json`. This file lis
 
 ### Creating your movies database
 Sequelize is a Javascript ORM that makes it easier to interact with our database. Let's alias Sequelize to make it a bit easier yet. Type in the following: `alias sqlize=node_modules/.bin/sequelize`. Ahh, much nicer that typing that whole path. To set up your database do the following:
-- `sqlize init`
-- `createdb movie_library`
+- `createdb movie_library` to create the table
+- `sqlize db:migrate` to add the columns
 
 Now your machine is set up with a database!
 
@@ -41,6 +41,11 @@ To compile the Sass run `grunt compile` in your command line. Then `grunt watch`
 
 ### Viewing the project
 To view this project, start by opening a new tab in command line, and entering `nodemon`. If the server goes up correctly, there will be a message that reads: `"Success! View this page on localhost:4000"` Now all navigate to that url to view your own local build of this project!
+
+### Troubleshooting
+- Is Postgres running on your machine?
+- Have you run the migration? 
+- Look in `node_modules`. Do you see all the dependent packages installed?
 
 
 ## Helpful Links
