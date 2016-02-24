@@ -34,7 +34,6 @@ app.get('/', function(req,res){
 });
 
 app.post('/create', function(req,res){
-  // have to call my create new user functions
   db.movie.createNewMovie(req.body.title, req.body.review,req.body.image, req.body.rating,
     function(err){
       console.log('NOO');

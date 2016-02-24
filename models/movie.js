@@ -44,8 +44,4 @@ module.exports = function (sequelize, DataTypes){
 
   )
   return Movie;
-
 };
-
-
-// console.log("I found " + movie[0].dataValues.title);
