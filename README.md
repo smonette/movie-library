@@ -44,7 +44,7 @@ To view this project, start by opening a new tab in command line, and entering `
 
 ### Troubleshooting
 - Is Postgres running on your machine?
-- Have you run the migration? 
+- Was the migration successful? 
 - Look in `node_modules`. Do you see all the dependent packages installed?
 
 
