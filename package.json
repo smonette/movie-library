@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "grunt compile",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,12 @@
   "homepage": "https://github.com/smonette/movie-library",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
+    "express-messages": "^1.0.0",
+    "express-session": "^1.13.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "^0.6.1",
@@ -29,9 +34,5 @@
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.3",
     "sequelize-cli": "^2.3.1"
-  },
-  "scripts": {
-    "postinstall": "grunt compile",
-    "start": "node server.js"
   }
 }

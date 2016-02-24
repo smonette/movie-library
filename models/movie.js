@@ -34,8 +34,21 @@ module.exports = function (sequelize, DataTypes){
         }).error(function(error) {
           console.log(error);
         }).then(function(movie) {
-          success({message: 'Movie added!'});
+          success({ message: 'Movie added!'});
         });
+      }, // close createNewMovie
+
+      findMovie:function(term,err,success) {
+        Movie.findAll({
+          where: {
+            title: { like: '%' + term + '%' }
+          }
+        }).error(function(error) {
+          console.log(error);
+        }).then(function(movie) {
+          success({ message: 'Movie found!'});
+        });
+
       } // close createNewMovie
 
     } // close classMethods
@@ -48,8 +61,4 @@ module.exports = function (sequelize, DataTypes){
 };
 
 
-
-
-
-
-
+// console.log("I found " + movie[0].dataValues.title);
