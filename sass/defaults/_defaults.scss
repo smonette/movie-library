@@ -4,7 +4,7 @@ body {
   background-color: $light;
 
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  @extend .type-default;
   color: $dark;
 }
 

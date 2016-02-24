@@ -14,3 +14,18 @@ $mobile-only:		'max-width: 600px';
 $tablet-up:			'min-width:601px';
 $up-to-desktop:		'max-width:960px';
 $desktop-up:		'min-width: 961px';
+
+.type-default {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.type-lg {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.type-xl {
+  font-size: 24px;
+  line-height: 36px;
+}

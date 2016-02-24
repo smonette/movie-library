@@ -6,10 +6,9 @@ This is a simple Node.js app that stores reviews and ratings of movies you've se
 * [Goals](#goals)
 * [Tech Overview](#tech-overview)
 * [Getting Started](#getting-started)
-* [Known Issues](#known-issues)
+* [Next Steps](#next-steps)
 * [Helpful Links](#helpful-links)
 
-===
 
 ## Goals
 * Display a list of movies 
@@ -18,12 +17,10 @@ This is a simple Node.js app that stores reviews and ratings of movies you've se
 * Clicking a title will reveal a review for each movie
 * Include a search bar/filter to look up movies on list 
 
-===
 
 ## Tech Overview
 This is built on Node.js, with a Postgres database to store your movies. The Sass is compiled with Grunt.
 
-===
 
 ## Getting Started
 ### Readying your dev environment
@@ -54,9 +51,8 @@ To view this project, start by opening a new tab in command line, and entering `
 - Was the migration successful? 
 - Look in `node_modules`. Do you see all the dependent packages installed?
 
-===
 
-## Known Issues
+## Next Steps
 As I worked on this I came across some issues that need to be solved in the future:
 
 ### Search
@@ -64,7 +60,6 @@ As I worked on this I came across some issues that need to be solved in the futu
 * If there are two movies containing a word, only the first movie is displaying
 
 
-===
 
 ## Helpful Links
 * [Node.js](https://nodejs.org/en/)

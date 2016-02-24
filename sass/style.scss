@@ -6,9 +6,8 @@
 @import "layouts/row";
 @import "layouts/spacing";
 
-// Page Structure
+// Page Components 
 @import "objects/header";
-
 @import "objects/search";
 
 // ADD REVIEWS
@@ -18,7 +17,7 @@
 // Form
 @import "objects/form";
 
-// REVIEW GRID
+// Grid
 @import "objects/review";
 @import "objects/review.image";
 @import "objects/review.text";

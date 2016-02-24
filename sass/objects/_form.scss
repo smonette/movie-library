@@ -7,7 +7,7 @@
   display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 20px;
+  @extend .type-lg;
 }
 .form-label_radio {
   margin-left: 10px;

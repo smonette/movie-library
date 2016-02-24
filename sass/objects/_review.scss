@@ -36,7 +36,7 @@
 }
 
 .review-rating {
-  font-size: 20px;
+  @extend .type-lg;
 }
 
 
@@ -50,6 +50,7 @@
     display: block;
     height: 100%;
     width: 100%;
+    padding-top: 60px;
     &:hover { color: $blue; }
   }
 }
