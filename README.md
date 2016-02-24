@@ -59,6 +59,10 @@ As I worked on this I came across some issues that need to be solved in the futu
 * Search yields no results when there's a space, so `Dead Pool` won't find `Deadpool`
 * If there are two movies containing a word, only the first movie is displaying
 
+### Mobile/Tablet
+* The "add movie" form is too tall on mobile and the submit bar is hidden
+* Mobile iOS needs more form styling.
+
 
 
 ## Helpful Links
