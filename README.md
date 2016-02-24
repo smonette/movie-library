@@ -31,8 +31,8 @@ Good news: Most Node setup is left in the hands of `package.json`. This file lis
 
 ### Creating your movies database
 Sequelize is a Javascript ORM that makes it easier to interact with our database. Let's alias Sequelize to make it a bit easier yet. Type in the following: `alias sqlize=node_modules/.bin/sequelize`. Ahh, much nicer that typing that whole path. To set up your database do the following:
-- `createdb movie_library` to create the table
-- `sqlize db:migrate` to add the columns
+- `createdb movie_library` to create the database
+- `sqlize db:migrate` to add the table and columns
 
 Now your machine is set up with a database!
 
