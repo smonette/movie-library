@@ -1,6 +1,6 @@
 # My Movie Library
 
-This is a simple app that stores short reviews of movies you've seen!
+This is a simple Node.js app that stores reviews and ratings of movies you've seen. You can view a demo [here](http://stephs-movie-library.herokuapp.com/).
 
 ## Table of Contents
 * [Goals](#goals)
@@ -10,9 +10,9 @@ This is a simple app that stores short reviews of movies you've seen!
 
 ## Goals
 * Display a list of movies 
-* Show a thumbnail/image for each movie
-* Display ratings for each movie
-* Hide & reveal description for each movie
+  * Show a thumbnail/image for each movie
+  * Display ratings for each movie
+* Clicking a title will reveal a review for each movie
 * Include a search bar/filter to look up movies on list 
 
 ## Tech Overview
