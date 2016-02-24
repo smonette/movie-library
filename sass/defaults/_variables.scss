@@ -7,7 +7,7 @@ $space: 20px;
 
 $border-radius: 5px;
 
-$border: 1px solid $dark;
+$border: 1px solid darken($light, 5%);
 
 // BREAKPOINTS
 $mobile-only:		'max-width: 600px';
